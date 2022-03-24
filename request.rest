@@ -1,0 +1,23 @@
+GET http://localhost:5000/products
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Macbook air 2022",
+    "price": 100000000,
+    "stock": 5
+
+}
+
+###
+PATCH  http://localhost:5000/products/1
+Content-Type: application/json
+
+{
+    "name": "Macbook air 2020",
+    "price": 18000000,
+    "stock": 10
+
+}
